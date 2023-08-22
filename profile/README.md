@@ -11,6 +11,15 @@ Nuestra misión actual es encontrar la forma más viable de ayudar a las persona
  
 Nuestra visión es convertirnos en una empresa líder en el desarrollo de tecnologías que ayuden a resolver distintas problemáticas médicas en el Perú y, eventualmente, en el mundo. 
 
+#### 1.1.2.                 Perfiles de integrantes del equipo
+
+#### Luis Alberto Pineda Ugas
+Me encuentro estudiando la carrera de Ingeniería de Software, en la que estoy en el séptimo ciclo. Decidí estudiar esta carrera debido a que desde pequeño me he interesado por la tecnología y todo lo que se puede hacer con ella, en especial el software que nos permite realizar acciones que antes se podían considerar imposibles. Me considero alguien honesto, generoso, amable y responsable. Lo que me gusta hacer en mis tiempos libres es jugar videojuegos, ver series o escuchar música. Lo que espero en este curso es aprender a desarrollar software de calidad para diversos tipos de dispositivos y así llegar a todo tipo de usuarios.
+
+
+
+
+
 <!--
 
 **Here are some ideas to get you started:**
