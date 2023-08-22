@@ -20,7 +20,8 @@ Me encuentro estudiando la carrera de Ingeniería de Software, en la que estoy e
 #### Cristhian Gabriel Gómez De La Cruz
 Mi nombre es Cristhian Gómez, actualmente resido en Lima y tengo 20 años. Hoy por hoy, soy un estudiante de la Universidad Peruana de Ciencias Aplicadas y me encuentro cursando el septimo ciclo de la carrera de Ingeniería de Software. Elegí esta carrera debido a mi gusto por la lógica detrás de las computadoras y quisiera en el futuro poder desarrollar aplicaciones que marquen un impacto en el mundo. Considero que una de mis habilidades es la persistencia, siempre busco dar todo de mi para lograr mis metas. Me comprometo a aportar soluciones ante los problemas que encontremos en el desarrollo de nuestro trabajo. 
 
-
+#### Maria Alexandra Ahuanari Murayari
+Soy estudiante de la carrera de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas (UPC). La razón por la cual elegí la carrera es porque me gustaría trabajar en el desarrollo de soluciones tecnológicas para los problemas que aquejan a nuestra sociedad. Por otra parte, tengo interés y ciertos conocimientos en los temas de UX/UI aprendidos en anteriores cursos. Finalmente, me comprometo a cumplir con todas las actividades asignadas para desarrollar y presentar un buen trabajo. 
 <!--
 
 **Here are some ideas to get you started:**
