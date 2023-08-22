@@ -17,7 +17,8 @@ Nuestra visión es convertirnos en una empresa líder en el desarrollo de tecnol
 Me encuentro estudiando la carrera de Ingeniería de Software, en la que estoy en el séptimo ciclo. Decidí estudiar esta carrera debido a que desde pequeño me he interesado por la tecnología y todo lo que se puede hacer con ella, en especial el software que nos permite realizar acciones que antes se podían considerar imposibles. Me considero alguien honesto, generoso, amable y responsable. Lo que me gusta hacer en mis tiempos libres es jugar videojuegos, ver series o escuchar música. Lo que espero en este curso es aprender a desarrollar software de calidad para diversos tipos de dispositivos y así llegar a todo tipo de usuarios.
 
 
-
+#### Cristhian Gabriel Gómez De La cruz
+Mi nombre es Cristhian Gómez, actualmente resido en Lima y tengo 20 años. Hoy por hoy, soy un estudiante de la Universidad Peruana de Ciencias Aplicadas y me encuentro cursando el septimo ciclo de la carrera de Ingeniería de Software. Elegí esta carrera debido a mi gusto por la lógica detrás de las computadoras y quisiera en el futuro poder desarrollar aplicaciones que marquen un impacto en el mundo. Considero que una de mis habilidades es la persistencia, siempre busco dar todo de mi para lograr mis metas. Me comprometo a aportar soluciones ante los problemas que encontremos en el desarrollo de nuestro trabajo. 
 
 
 <!--
