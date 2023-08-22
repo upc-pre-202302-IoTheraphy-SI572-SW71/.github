@@ -27,7 +27,7 @@ Soy estudiante de la carrera de Ingeniería de Software en la Universidad Peruan
 ### Leonardo Santos Arrieta Huaman
 Considero que soy alguien responsable al momento de realizar mis tareas y he ganado experiencia trabajando en equipo en los ciclos anteriores. Desde chico he mostrado interes por el desarrollo de los videojuegos por lo que tengo conocimiento en programacion. ademas tengo conocimientos en edicion de video. para este equipo pongo a dispocicion todos los conocimientos antes mencionados para lograr un desarrollo optimo del proyecto.
 
-###Jose Fabricio Jared Del Carpio Lopez  
+### Jose Fabricio Jared Del Carpio Lopez  
 Mi nombre es Jose Fabricio Jared Del Carpio Lopez, tengo 20 años, actualmente estoy en el octavo ciclo de la carrera de Ingeniería de software en la Universidad Peruana de Ciencias Aplicadas (UPC). Soy una persona segura y creativa. Gracias a estas cualidades tengo la capacidad de resolver dificultades del día a día. Estoy seguro de que el proyecto dará opciones innovadoras que ayuden a mejorar la calidad de vida de la población.
 
 
