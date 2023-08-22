@@ -2,7 +2,7 @@
 
 ## Introducción
 ### 1.1.                  Startup Profile
-A continuación, procederemos a informar sobre a lo que se dedica nuestra empresa “DigitAlholics”, así como la presentación del equipo de desarrollo del producto de software p “IoTheraphy”.
+A continuación, procederemos a informar sobre a lo que se dedica nuestra empresa “DigitAlholics”, así como la presentación del equipo de desarrollo del producto de software “IoTheraphy”.
 
 ##### 1.1.1.                 Descripción del Startup
 En la actualidad existe un número exorbitante de personas que necesitan ayuda para poder mantener o mejorar su calidad de vida. Específicamente en Lima, Perú. Se ha identificado que realizar un buen cuidado de personas discapacitadas, vulnerables o con una enfermedad grave, es una labor demasiado difícil. Asimismo, los familiares de estos individuos son directamente afectados por las condiciones en las que se encuentran, pues su cuidado requiere demasiado tiempo y, del mismo modo, un gran esfuerzo físico. Por esta razón, hemos decidido crear una empresa llamada “DigitAlholics”, que significa “Adictos a la tecnología”. Somos una empresa enfocada al desarrollo de tecnologías que solucionen problemáticas en el ámbito de la salud que estén presentes en nuestra sociedad.  
