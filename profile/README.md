@@ -22,6 +22,15 @@ Mi nombre es Cristhian Gómez, actualmente resido en Lima y tengo 20 años. Hoy 
 
 #### Maria Alexandra Ahuanari Murayari
 Soy estudiante de la carrera de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas (UPC). La razón por la cual elegí la carrera es porque me gustaría trabajar en el desarrollo de soluciones tecnológicas para los problemas que aquejan a nuestra sociedad. Por otra parte, tengo interés y ciertos conocimientos en los temas de UX/UI aprendidos en anteriores cursos. Finalmente, me comprometo a cumplir con todas las actividades asignadas para desarrollar y presentar un buen trabajo. 
+
+### 1.2. Solution Profile
+En este punto del informe, pasaremos a la explicación detallada de nuestro producto software, tanto su factor innovador y la forma en la cual será monetizada.  
+ 
+#### Product Name 
+Se decidió llamar a nuestro producto “IoTheraphy”, ya que, en el lenguaje inglés, “Therapist” es una abreviación de terapeuta y "Physical”, fÍsica. Además, ahora nos enfocaremos más en el desarrollo de diferentes dispositivos como computadoras o celulares, por lo que agregamos “IoT”, por el Internet de las Cosas; por ello, el nombre completo se traduce como “Internet de las Cosas para Fisioterapia”. Del mismo modo, se eligió este idioma porque, además de generar más atractivo hacia el público, es el idioma más hablado del mundo, lo cual vuelve más comercial a nuestra aplicación. 
+
+
+
 <!--
 
 **Here are some ideas to get you started:**
