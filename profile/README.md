@@ -23,6 +23,10 @@ Mi nombre es Cristhian Gómez, actualmente resido en Lima y tengo 20 años. Hoy 
 #### Maria Alexandra Ahuanari Murayari
 Soy estudiante de la carrera de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas (UPC). La razón por la cual elegí la carrera es porque me gustaría trabajar en el desarrollo de soluciones tecnológicas para los problemas que aquejan a nuestra sociedad. Por otra parte, tengo interés y ciertos conocimientos en los temas de UX/UI aprendidos en anteriores cursos. Finalmente, me comprometo a cumplir con todas las actividades asignadas para desarrollar y presentar un buen trabajo. 
 
+
+### Leonardo Santos Arrieta Huaman
+Considero que soy alguien responsable al momento de realizar mis tareas y he ganado experiencia trabajando en equipo en los ciclos anteriores. Desde chico he mostrado interes por el desarrollo de los videojuegos por lo que tengo conocimiento en programacion. ademas tengo conocimientos en edicion de video. para este equipo pongo a dispocicion todos los conocimientos antes mencionados para lograr un desarrollo optimo del proyecto.
+
 ### 1.2. Solution Profile
 En este punto del informe, pasaremos a la explicación detallada de nuestro producto software, tanto su factor innovador y la forma en la cual será monetizada.  
  
