@@ -24,10 +24,10 @@ Mi nombre es Cristhian Gómez, actualmente resido en Lima y tengo 20 años. Hoy 
 Soy estudiante de la carrera de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas (UPC). La razón por la cual elegí la carrera es porque me gustaría trabajar en el desarrollo de soluciones tecnológicas para los problemas que aquejan a nuestra sociedad. Por otra parte, tengo interés y ciertos conocimientos en los temas de UX/UI aprendidos en anteriores cursos. Finalmente, me comprometo a cumplir con todas las actividades asignadas para desarrollar y presentar un buen trabajo. 
 
 
-### Leonardo Santos Arrieta Huaman
+#### Leonardo Santos Arrieta Huaman
 Considero que soy alguien responsable al momento de realizar mis tareas y he ganado experiencia trabajando en equipo en los ciclos anteriores. Desde chico he mostrado interes por el desarrollo de los videojuegos por lo que tengo conocimiento en programacion. ademas tengo conocimientos en edicion de video. para este equipo pongo a dispocicion todos los conocimientos antes mencionados para lograr un desarrollo optimo del proyecto.
 
-### Jose Fabricio Jared Del Carpio Lopez  
+#### Jose Fabricio Jared Del Carpio Lopez  
 Mi nombre es Jose Fabricio Jared Del Carpio Lopez, tengo 20 años, actualmente estoy en el octavo ciclo de la carrera de Ingeniería de software en la Universidad Peruana de Ciencias Aplicadas (UPC). Soy una persona segura y creativa. Gracias a estas cualidades tengo la capacidad de resolver dificultades del día a día. Estoy seguro de que el proyecto dará opciones innovadoras que ayuden a mejorar la calidad de vida de la población.
 
 
@@ -36,6 +36,15 @@ En este punto del informe, pasaremos a la explicación detallada de nuestro prod
  
 #### Product Name 
 Se decidió llamar a nuestro producto “IoTheraphy”, ya que, en el lenguaje inglés, “Therapist” es una abreviación de terapeuta y "Physical”, fÍsica. Además, ahora nos enfocaremos más en el desarrollo de diferentes dispositivos como computadoras o celulares, por lo que agregamos “IoT”, por el Internet de las Cosas; por ello, el nombre completo se traduce como “Internet de las Cosas para Fisioterapia”. Del mismo modo, se eligió este idioma porque, además de generar más atractivo hacia el público, es el idioma más hablado del mundo, lo cual vuelve más comercial a nuestra aplicación. 
+
+#### Monetización 
+Las soluciones de software desarrolladas para IoTheraphy generará ingresos de la siguiente forma.
+
+#### Pacientes:
+Este segmento podrá usar las aplicaciones de forma gratuita. La cita médica inicial tendrá un costo definido por el fisioterapeuta y el total del dinero será destinado a él. Del mismo modo, el costo del tratamiento designado por el fisioterapeuta también será establecido por este mismo, recibiendo de igual forma el total del precio pagado por el beneficiado. 
+
+#### Fisioterapeutas: 
+Este es el segmento que generará los ingresos para el equipo de DigitAlholics. Puesto que, la solución propuesto consta con dos planes de pago para que los especialistas puedan acceder a las caracteristicas con las que cuentan nuestros sistemas. El primer plan, “Standard”, permitirá al doctor fisioterapeuta atender hasta a un máximo de 10 pacientes, siendo capaz de agendar citas presenciales, virtuales y brindar tratamientos asíncronos a los pacientes. Por otro lado, el plan “Premium” permitirá realizar las mismas acciones con cualquier número de pacientes; es decir, una cantidad ilimitada. Ambas suscripciones permitirán un monitoreo constante gracias al producto “IoTheraphy”, el cual tendrá un costo único de S/. 2 500. Finalmente, el precio del primer plan es S/. 130.00 mensual y S/. 1300.00 anual. Del segundo, el precio aumenta a S/. 350.00 al mes y S/. 3 500.00 al año.
 
 
 
