@@ -1299,3 +1299,79 @@ El equipo presenta y detalla su enfoque táctico para diseñar la solución de s
 		- 4.2.4.7.2. Bounded Context Database Design Diagram. <br><br> 
 		A continuación, se presenta el modelo de base de datos para este bounded Context: 
 		<img src="https://raw.githubusercontent.com/upc-pre-202302-IoTheraphy-SI572-SW71/ReportAssets/main/Base4.png" width="400"><br><br>
+
+ - 4.2.5. Bounded Context: Payment Management Context <br><br>
+   	- 4.2.5.1. Domain Layer.<br><br>
+		En esta capa, se definen las clases relacionadas con las reglas de negocio y el núcleo del dominio de la gestión de pagos. Ejemplos de clases podrían incluir:
+		
+			Payment (Entity): Representa una transacción de pago con detalles como el monto, la fecha y el estado.
+			Appointment (Entity): Representa una cita médica agendada con información relevante como fecha, hora y detalles del médico.
+			VideoPlan (Entity): Representa los planes de suscripción que permiten a los pacientes acceder a videos subidos.
+
+	- 4.2.5.2. Interface Layer.<br><br>
+		En esta capa, se encuentran las clases relacionadas con la interfaz y la presentación de la gestión de pagos. Ejemplos de clases podrían incluir:
+		
+			PaymentController (Controller): Maneja las solicitudes y acciones relacionadas con el procesamiento de pagos.
+			AppointmentBookingController (Controller): Permite a los pacientes programar citas médicas.
+			VideoPlanController (Controller): Facilita la gestión de planes de suscripción para la visualización de videos.
+   
+   	- 4.2.5.3. Application Layer.<br><br>
+		Aquí se manejan los flujos de procesos del negocio relacionados con la gestión de pagos. Ejemplos de clases podrían ser:
+		
+			ProcessPaymentCommandHandler: Encargado de gestionar el procesamiento de pagos utilizando Stripe.
+			BookAppointmentCommandHandler: Maneja la reserva de citas médicas.
+			SubscribeToVideoPlanCommandHandler: Gestiona la suscripción a planes para la visualización de videos.
+
+	- 4.2.5.4.  Infrastructure Layer.<br><br>	
+		En esta capa, se presentan las clases que interactúan con servicios externos, como Stripe para el procesamiento de pagos y sistemas de almacenamiento para la gestión de planes y videos. Ejemplo:
+		
+			StripePaymentService: Implementa la lógica para realizar pagos a través de Stripe.
+			VideoPlanRepository: Interactúa con la base de datos o el sistema de almacenamiento para recuperar y gestionar información sobre planes de suscripción y videos.
+   	
+   	- 4.2.5.6.  Bounded Context Software Architecture Component Level Diagrams <br><br>
+		A continuación, se presenta el diagrama de componentes para este bounded Context:
+		<img src="https://media.discordapp.net/attachments/1016712858240823300/1149655798587326535/image.png?width=648&height=662" width="400"><br><br>
+
+  	- 4.2.5.7.  Bounded Context Software Architecture Code Level Diagrams. <br><br>
+		En esta sección, el equipo muestra y describe diagramas que proporcionan un nivel de detalle más profundo sobre cómo se implementan los componentes dentro del contexto delimitado.
+		- 4.2.5.7.1. Bounded Context Domain Layer Class Diagrams. <br><br>
+		A continuación, se presenta el diagrama de clases para este bounded Context:
+		<img src="https://raw.githubusercontent.com/upc-pre-202302-IoTheraphy-SI572-SW71/ReportAssets/main/Clases%205.png" width="400"><br><br>
+  
+		- 4.2.5.7.2. Bounded Context Database Design Diagram. <br><br> 
+		A continuación, se presenta el modelo de base de datos para este bounded Context: 
+		<img src="https://media.discordapp.net/attachments/1016712858240823300/1149676597620781156/PT02AAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAIEsYPjOdEICBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAh8AgOEFz6AlaFitwAAAABJRU5ErkJggg.png?width=1305&height=621" width="400"><br><br>
+
+
+
+
+
+# Conclusiones
+## Conclusiones y Recomendaciones
+1.	Existe una gran cantidad de personas que tienen alguna condición que limita su traslado a centros de salud y necesitan atención médica constante, ya sea por su edad o una condición médica. 
+
+2.	La mayoría de las aplicaciones en el mercado dirigidas a nuestro público objetivo presentan una o varias deficiencias en la atención al cliente como pueden ser la incapacidad de elegir el profesional de la salud de su preferencia. 
+
+3.	El trabajo nos permitió entender la necesidad de comunicación de un sector de personas, en este caso las personas con limitaciones físicas y sus tratamientos, viendo sus requerimientos que eran indispensables para cubrir sus necesidades. 
+
+
+
+# Bibliografia
+	Instituto Nacional de Estadística e Informática (INEI). (2018). Situación de la Población Adulta Mayor. Lima: INEI. Recuperado de https://www.inei.gob.pe/media/MenuRecursivo/boletines/01-informe-tecnico-n02_adulto_ene-feb_mar2018.pdf  [Consulta: 28 de Agosto de 2022]. 
+
+	Instituto Nacional de Estadística e Informática (INEI). (2020). Perú: Estadísticas de las personas con alguna discapacidad. Lima: INEI. Recuperado de https://www.congreso.gob.pe/Docs/comisiones2020/InclusionSocialDiscapacidad/files/presentaciones_ppt/poblaci%C3%B3n_con_alguna_discapacidad_20_julio_de_2020.pdf  [Consulta: 28 de Agosto de 2022]. 
+
+	Pérez, A. (2016). Impacto de la discapacidad en el núcleo familiar. España: Académica-e, repositorio institucional de la Universidad Pública de Navarra. Recuperado de https://academica-e.unavarra.es/bitstream/handle/2454/23449/TFG_AMAIA%20PEREZ%20AYESA.pdf?sequence=1&isAllowed=y  [Consulta: 28 de Agosto de 2022]. 
+
+
+# Anexos
+### Anexo A. Consideraciones sobre secciones que incluyen videos
+| Producto               | URL                                                  |
+|------------------------|------------------------------------------------------|
+| Needfinding Interviews | [https://web.microsoftstream.com/video/f635fac0-8e57-4fd1-8299-3893114161ff](https://web.microsoftstream.com/video/f635fac0-8e57-4fd1-8299-3893114161ff) |
+|------------------------|------------------------------------------------------|
+| Exposition tb1 | https://upcedupe-my.sharepoint.com/:v:/g/personal/u202020239_upc_edu_pe/ESdlz0atWoNAnYshZkjBt1UB2Og_azGUsvL_o_p3noQ5oA?e=a0CW1h&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZyIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19 |
+|------------------------|------------------------------------------------------|
+| Miro | https://miro.com/app/board/uXjVPEw1bPU=/?share_link_id=841591691172 |
+|------------------------|------------------------------------------------------|
+| IotDiagram | https://drive.google.com/file/d/1EeCV6OtjTlnQnoWPeRG80lqOaa1xitVW/view?usp=sharing |
