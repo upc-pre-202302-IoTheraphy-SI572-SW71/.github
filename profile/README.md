@@ -1177,4 +1177,125 @@ El equipo presenta y detalla su enfoque táctico para diseñar la solución de s
 		A continuación, se presenta el modelo de base de datos para este bounded Context:
 		<img src="https://raw.githubusercontent.com/upc-pre-202302-IoTheraphy-SI572-SW71/ReportAssets/main/image.png" width="400"><br><br>
 
+  - 4.2.3. Bounded Context:  Physiotherapist Selection and Review Management Context <br><br>
+  	- 4.2.3.1. Domain Layer.<br><br>
+		En esta capa, se encuentra el núcleo de la aplicación relacionado con la selección de fisioterapeutas y la gestión de revisiones, así como las reglas de negocio relacionadas con estos aspectos.
+		
+		Entities (Entidades):
+		
+			Physiotherapist: Representa un fisioterapeuta con atributos como ID, nombre, especialidades, horarios de trabajo, etc.
+			Review: Representa una revisión de un fisioterapeuta con atributos como ID, calificación, comentario, etc.
+		
+  		Value Objects (Objetos de Valor):
+		
+			WorkingHours: Un objeto de valor para representar horarios de trabajo.
+			Rating: Un objeto de valor para representar calificaciones.
+
+		Aggregates (Agregados):
+		
+			PhysiotherapistAggregate: Puede ser un agregado que incluye la entidad de fisioterapeuta y las revisiones relacionadas.
+		
+  		Factories (Fábricas):
+		
+			PhysiotherapistFactory: Para crear instancias de fisioterapeutas de manera consistente.
+			ReviewFactory: Para crear instancias de revisiones de manera consistente.
+
+		Domain Services (Servicios de Dominio):
+		
+			PhysiotherapistSelectionService: Puede ser un servicio de dominio encargado de la selección de fisioterapeutas.
+			ReviewManagementService: Para gestionar las revisiones y calificaciones.
+		
+  		Repositories (Repositorios):
+		
+			PhysiotherapistRepository: Define cómo se accede y se persisten los datos de fisioterapeutas.
+			ReviewRepository: Define cómo se accede y se persisten los datos de revisiones.
+	
+ 	- 4.2.3.2. Interface Layer.<br><br>
+		En esta capa, se encuentran las clases relacionadas con la interacción del usuario y la presentación.
+		
+  		Controllers (Controladores):
+		
+			PhysiotherapistController: Controla las solicitudes relacionadas con la selección de fisioterapeutas y la gestión de revisiones.
+			ReviewController: Controla las solicitudes relacionadas con la creación y consulta de revisiones.
+		
+  		Consumers (Consumidores):
+		
+			Pueden estar presentes si se utiliza una arquitectura de mensajes para la gestión de fisioterapeutas y revisiones.
+	
+ 	- 4.2.3.3. Application Layer.<br><br>
   
+		Command Handlers (Manejadores de Comandos):
+
+			SelectPhysiotherapistCommandHandler: Maneja el proceso de selección de fisioterapeutas.
+			CreateReviewCommandHandler: Maneja la creación de revisiones y calificaciones.
+			Otros manejadores relacionados con la gestión de fisioterapeutas y revisiones
+	
+ 	- 4.2.3.4.  Infrastructure Layer.<br><br>
+		
+		En esta capa se encuentran las clases que acceden a servicios externos, bases de datos y otros recursos.
+		
+		Repositories Implementations (Implementaciones de Repositorios):
+		
+			PhysiotherapistRepositoryDB: Implementación concreta del repositorio que interactúa con una base de datos para almacenar y recuperar datos de fisioterapeutas.
+			ReviewRepositoryDB: Implementación concreta del repositorio que interactúa con una base de datos para almacenar y recuperar datos de revisiones.
+
+		External Services Clients (Clientes de Servicios Externos):
+			
+			Puede incluir clases para interactuar con servicios externos, como sistemas de notificación de citas o servicios de terceros para verificar la información de fisioterapeutas.
+
+ 	- 4.2.3.6.  Bounded Context Software Architecture Component Level Diagrams <br><br>
+		A continuación, se presenta el diagrama de componentes para este bounded Context:
+		<img src="https://media.discordapp.net/attachments/1016712858240823300/1149655704655904861/image.png?width=498&height=662" width="400"><br><br>
+
+  	- 4.2.3.7.  Bounded Context Software Architecture Code Level Diagrams. <br><br>
+		En esta sección, el equipo muestra y describe diagramas que proporcionan un nivel de detalle más profundo sobre cómo se implementan los componentes dentro del contexto delimitado.
+		- 4.2.3.7.1. Bounded Context Domain Layer Class Diagrams. <br><br>
+		A continuación, se presenta el diagrama de clases para este bounded Context:
+		<img src="https://media.discordapp.net/attachments/1016712858240823300/1149683624296316938/5BM9vTdyAAAAABJRU5ErkJggg.png?width=790&height=662" width="400"><br><br>
+  
+		- 4.2.3.7.2. Bounded Context Database Design Diagram. <br><br> 
+		A continuación, se presenta el modelo de base de datos para este bounded Context: 
+		<img src="https://media.discordapp.net/attachments/1016712858240823300/1149672129709756446/wPWzvIdJ50VDQAAAABJRU5ErkJggg.png?width=588&height=662" width="400"><br><br>
+  
+ - 4.2.4. Bounded Context: Patient Engagement and Theraphy coordination Context <br><br>
+ 	- 4.2.4.1. Domain Layer.<br><br>
+		En esta capa, se definen las clases que representan las reglas de negocio y el núcleo del dominio relacionado con la coordinación de terapia y la participación del paciente. Ejemplos de clases podrían incluir:
+		
+			TherapySession (Entity): Representa una sesión de terapia con atributos como fecha, duración, notas, etc.
+			ExerciseVideo (Entity): Representa videos de ejercicios que los fisioterapeutas pueden asignar a los pacientes.
+			Patient (Entity): Representa la entidad del paciente con información relevante como historial médico, avances de terapia, etc.
+			Therapist (Entity): Representa al fisioterapeuta con detalles sobre su experiencia y horarios de disponibilidad.
+	
+ 	- 4.2.4.2. Interface Layer.<br><br>
+		En esta capa, se encuentran las clases relacionadas con la interfaz y la presentación de la coordinación de terapia y la participación del paciente. Ejemplos de clases podrían incluir:
+		
+			TherapyController (Controller): Maneja las solicitudes y acciones relacionadas con las sesiones de terapia.
+			PatientProfileController (Controller): Se encarga de la interacción entre el paciente y su perfil en la plataforma.
+			TherapistDashboardController (Controller): Proporciona herramientas para que los fisioterapeutas puedan coordinar y llevar a cabo las terapias.
+
+ 	- 4.2.4.3. Application Layer.<br><br>
+		Aquí se manejan los flujos de procesos del negocio relacionados con la coordinación de terapia y la participación del paciente. Ejemplos de clases podrían ser:
+		
+			ScheduleTherapySessionCommandHandler: Maneja la programación de sesiones de terapia.
+			RecordTherapyProgressCommandHandler: Gestiona el registro de avances de terapia por parte de los fisioterapeutas.
+			AssignExerciseVideoCommandHandler: Permite a los fisioterapeutas asignar videos de ejercicios a los pacientes.
+
+ 	- 4.2.4.4.  Infrastructure Layer.<br><br>
+		En esta capa, se presentan las clases que acceden a servicios externos como bases de datos o sistemas de almacenamiento de videos. Ejemplo:
+		
+			TherapyDatabaseRepository: Implementa la interfaz definida en el Domain Layer para interactuar con la base de datos y acceder a la información de terapia.
+			VideoStorageService: Permite subir y gestionar videos de ejercicios en la plataforma.
+
+	- 4.2.4.6.  Bounded Context Software Architecture Component Level Diagrams <br><br>
+		A continuación, se presenta el diagrama de componentes para este bounded Context:
+		<img src="https://media.discordapp.net/attachments/1016712858240823300/1149655756778516600/image.png?width=876&height=662" width="400"><br><br>
+
+	- 4.2.4.7.  Bounded Context Software Architecture Code Level Diagrams. <br><br>
+		En esta sección, el equipo muestra y describe diagramas que proporcionan un nivel de detalle más profundo sobre cómo se implementan los componentes dentro del contexto delimitado.
+		- 4.2.4.7.1. Bounded Context Domain Layer Class Diagrams. <br><br>
+		A continuación, se presenta el diagrama de clases para este bounded Context:
+		<img src="https://media.discordapp.net/attachments/1016712858240823300/1149683822212956160/NrmaqqGgAAAABJRU5ErkJggg.png?width=736&height=662" width="400"><br><br>
+
+		- 4.2.4.7.2. Bounded Context Database Design Diagram. <br><br> 
+		A continuación, se presenta el modelo de base de datos para este bounded Context: 
+		<img src="https://raw.githubusercontent.com/upc-pre-202302-IoTheraphy-SI572-SW71/ReportAssets/main/Base4.png" width="400"><br><br>
