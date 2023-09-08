@@ -1011,3 +1011,170 @@ A continuación, el equipo explicará el proceso de toma de decisiones a nivel e
    	- 4.1.3.4. Software Architecture Deployment Diagrams.<br><br>
     		Son representaciones visuales que muestran cómo los componentes de software se despliegan y se ejecutan en la infraestructura de hardware o en un entorno de producción. A continuación, presentamos nuestro diagrama:
 	<img src="https://media.discordapp.net/attachments/1016712858240823300/1149668010601238579/image.png?width=880&height=662" width="400"><br><br>
+
+
+### 4.2. Tactical-Level Domain-Driven Design 
+El equipo presenta y detalla su enfoque táctico para diseñar la solución de software en cada uno de los Bounded Contexts. En otras palabras, se explica la estrategia concreta para abordar y desarrollar la implementación técnica de cada contexto delimitado en la solución de software.
+ - 4.2.1. Bounded Context: User Management Context <br><br>
+ 	- 4.2.1.1. Domain Layer.<br><br>
+		    **Capa de Dominio (Domain Layer):**
+		
+		En esta capa, se encuentra el núcleo de la aplicación relacionado con la gestión de usuarios y las reglas de negocio relacionadas con la autenticación y la autorización.
+		
+	 	Entities (Entidades):
+		
+			User: Representa un usuario del sistema con atributos como ID, nombre de usuario, contraseña encriptada, roles, etc.
+			
+			Role: Representa un rol de usuario con atributos como ID, nombre y descripción.
+		
+		Value Objects (Objetos de Valor):
+		
+			Email: Un objeto de valor para representar direcciones de correo electrónico válidas.
+			
+			Password: Un objeto de valor para manejar contraseñas de manera segura.
+		
+  		Aggregates (Agregados):
+		
+			UserAggregate: Puede ser un agregado que incluye la entidad de usuario y los roles relacionados.
+		
+		Factories (Fábricas):
+		
+			UserFactory: Para crear instancias de usuarios y roles de manera consistente.
+		
+		Domain Services (Servicios de Dominio):
+		
+			AuthenticationService: Puede ser un servicio de dominio encargado de la autenticación de usuarios.
+			
+		Repositories (Repositorios):
+		
+			UserRepository: Define cómo se accede y se persisten los usuarios y roles.
+
+	- 4.2.1.2. Interface Layer.<br><br>
+			**Capa de Interfaz (Interface Layer):**
+		
+		En esta capa, se encuentran las clases relacionadas con la interacción del usuario y la presentación.
+		
+		Controllers (Controladores):
+		
+			UserController: Controla las solicitudes relacionadas con la gestión de usuarios, como registro, inicio de sesión, administración de roles, etc.
+   
+		Consumers (Consumidores):
+		
+		Pueden estar presentes si se utiliza una arquitectura de mensajes para la gestión de usuarios, como procesar eventos de registro de usuarios.
+		Capa de Aplicación (Application Layer):
+		
+		Command Handlers (Manejadores de Comandos):
+		
+			RegisterUserCommandHandler: Maneja el proceso de registro de nuevos usuarios.
+			AuthenticateUserCommandHandler: Maneja el proceso de autenticación de usuarios.
+
+	- 4.2.1.3. Application Layer.<br><br>
+ 		
+		Command Handlers (Manejadores de Comandos):
+
+			RegisterUserCommandHandler: Maneja el proceso de registro de nuevos usuarios.
+			AuthenticateUserCommandHandler: Maneja el proceso de autenticación de usuarios.
+   
+	- 4.2.1.4. Infrastructure Layer.<br><br>
+	 		**Capa de Infraestructura (Infrastructure Layer):**
+	
+		En esta capa se encuentran las clases que acceden a servicios externos, bases de datos y otros recursos.
+		
+		Repositories Implementations (Implementaciones de Repositorios):
+		
+			UserRepositoryDB: Implementación concreta del repositorio que interactúa con una base de datos para almacenar y recuperar datos de usuarios y roles.
+   
+		External Services Clients (Clientes de Servicios Externos):
+		
+		Puede incluir clases para interactuar con servicios externos, como sistemas de correo electrónico para notificaciones.
+
+ 	- 4.2.1.6. Bounded Context Software Architecture Component Level Diagrams.<br><br> 
+		A continuación, se presenta el diagrama de componentes para este bounded Context:<br> 
+		<img src="https://media.discordapp.net/attachments/1016712858240823300/1149655617531813989/image.png?width=682&height=662" width="400"><br><br>
+
+	- 4.2.1.7. Bounded Context Software Architecture Code Level Diagrams.<br>
+	En esta sección, el equipo muestra y describe diagramas que proporcionan un nivel de detalle más profundo sobre cómo se implementan los componentes dentro del contexto delimitado.<br>
+		- 4.2.1.7.1. Bounded Context Domain Layer Class Diagrams.<br><br>  
+		A continuación, se presenta el diagrama de clases para este bounded Context:
+		<img src="https://media.discordapp.net/attachments/1016712858240823300/1149682699930443796/Z4O3rMJECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAoFuBfwG1J3Oa8vtBsQAAAABJRU5ErkJggg.png?width=866&height=662" width="400"><br><br>
+		- 4.2.1.7.2. Bounded Context Database Design Diagram.<br><br> 
+		A continuación, se presenta el modelo de base de datos para este bounded Context:
+		<img src="https://media.discordapp.net/attachments/1016712858240823300/1149663856218615889/ER7bKPWnyXgAAAABJRU5ErkJggg.png?width=1305&height=523" width="400"><br><br>
+ - 4.2.2. Bounded Context: Health Records and Expertise Context <br><br>
+ 	- 4.2.2.1. Domain Layer.<br><br>
+		  **Capa de Dominio (Domain Layer):** <br><br>
+		
+		En esta capa, se encuentra el núcleo de la aplicación relacionado con la gestión de registros de salud y la especialización médica, así como las reglas de negocio relacionadas con estos aspectos.
+		
+		Entities (Entidades):
+		
+			HealthRecord: Representa un registro de salud de un paciente con atributos como ID, diagnósticos, tratamientos, medicamentos recetados, etc.
+			MedicalSpecialization: Representa una especialización médica con atributos como ID, nombre y descripción.
+			Value Objects (Objetos de Valor):
+			
+			Diagnosis: Un objeto de valor para representar diagnósticos médicos.
+			Medication: Un objeto de valor para representar medicamentos recetados.
+
+		Aggregates (Agregados):
+		
+			HealthRecordAggregate: Puede ser un agregado que incluye la entidad de registro de salud y los diagnósticos, tratamientos, etc., relacionados.
+		Factories (Fábricas):
+		
+			HealthRecordFactory: Para crear instancias de registros de salud de manera consistente.
+
+		Domain Services (Servicios de Dominio):
+		
+			HealthRecordManagementService: Puede ser un servicio de dominio encargado de la gestión de registros de salud.
+			MedicalExpertiseService: Para gestionar y consultar especializaciones médicas.
+
+		Repositories (Repositorios):
+		
+			HealthRecordRepository: Define cómo se accede y se persisten los registros de salud.
+			MedicalSpecializationRepository: Define cómo se acceden y se persisten las especializaciones médicas.
+
+	- 4.2.2.2. Interface Layer.<br><br>
+		En esta capa, se encuentran las clases relacionadas con la interacción del usuario y la presentación.
+		
+		Controllers (Controladores):
+		
+			HealthRecordController: Controla las solicitudes relacionadas con la gestión de registros de salud, diagnósticos, etc.
+			MedicalSpecializationController: Controla las solicitudes relacionadas con la gestión de especializaciones médicas.
+
+		Consumers (Consumidores):
+		
+			Pueden estar presentes si se utiliza una arquitectura de mensajes para la gestión de registros de salud y especializaciones médicas, como procesar eventos relacionados.
+	- 4.2.2.3. Application Layer.<br><br> 
+		Command Handlers (Manejadores de Comandos):
+
+			CreateHealthRecordCommandHandler: Maneja la creación de nuevos registros de salud.
+			AddDiagnosisCommandHandler: Maneja la adición de diagnósticos a registros de salud.
+			Otros manejadores relacionados con la gestión de especializaciones médicas.
+
+	- 4.2.2.4. Infrastructure Layer.<br><br> 
+		En esta capa se encuentran las clases que acceden a servicios externos, bases de datos y otros recursos.
+		
+		Repositories Implementations (Implementaciones de Repositorios):
+		
+			HealthRecordRepositoryDB: Implementación concreta del repositorio que interactúa con una base de datos para almacenar y recuperar datos de registros de salud.
+			MedicalSpecializationRepositoryDB: Implementación concreta del repositorio que interactúa con una base de datos para almacenar y recuperar datos de especializaciones médicas.
+   
+		External Services Clients (Clientes de Servicios Externos):
+		
+			Puede incluir clases para interactuar con servicios externos, como sistemas de correo electrónico para notificaciones o consultas de datos médicos externos.
+   
+ 	- 4.2.2.6. Bounded Context Software Architecture Component Level Diagrams. <br><br>
+		A continuación, se presenta el diagrama de componentes para este bounded Context: 
+		<img src="https://media.discordapp.net/attachments/1016712858240823300/1149655663572688937/image.png?width=667&height=662" width="400"><br><br>
+
+	- 4.2.2.7. Bounded Context Software Architecture Code Level Diagrams.<br>
+ 		En esta sección, el equipo muestra y describe diagramas que proporcionan un nivel de detalle más profundo sobre cómo se implementan los componentes dentro del contexto delimitado.
+
+   		- 4.2.2.7.1. Bounded Context Domain Layer Class Diagrams.<br><br>  
+		A continuación, se presenta el diagrama de clases para este bounded Context: 
+		<img src="https://raw.githubusercontent.com/upc-pre-202302-IoTheraphy-SI572-SW71/ReportAssets/main/Clases%202.png" width="400"><br><br>
+  
+		- 4.2.2.7.2. Bounded Context Database Design Diagram.<br><br> 
+		A continuación, se presenta el modelo de base de datos para este bounded Context:
+		<img src="https://raw.githubusercontent.com/upc-pre-202302-IoTheraphy-SI572-SW71/ReportAssets/main/image.png" width="400"><br><br>
+
+  
