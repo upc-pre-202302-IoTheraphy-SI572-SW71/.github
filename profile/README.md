@@ -354,7 +354,10 @@ Este es el segmento que generará los ingresos para el equipo de DigitAlholics. 
 	
 	•	Sección de reseña y calificación de los fisioterapeutas.  
 	
-	•	Calendario de las citas pendientes para los fisioterapeutas. 
+	•	Lista de las citas pendientes para los fisioterapeutas.
+
+	•  	Análisis del estado del paciente mediante dispositivos IoT.
+
 	
 	#### SUPOSICIONES DE NEGOCIO
 	
